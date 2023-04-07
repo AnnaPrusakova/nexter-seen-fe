@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "eslint:check": "next lint",
-    "eslint:fix": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix",
+    "eslint:fix": "eslint \"**/*.{jsx,ts,tsx}\" --fix",
     "stylelint:fix": "stylelint \"**/*.scss\" --fix",
     "prepare": "husky install"
   },
@@ -20,20 +20,18 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.60.0",
+    "sass": "^1.61.0",
     "typescript": "5.0.3"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "autoprefixer": "^10.4.14",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.0",
+    "lint-staged": "^13.2.1",
+    "postcss": "^8.4.21",
     "prettier": "^2.8.7",
-    "stylelint": "^15.4.0",
-    "stylelint-config-prettier-scss": "^0.0.1",
-    "stylelint-config-recess-order": "^4.0.0",
-    "stylelint-config-standard": "^32.0.0",
-    "stylelint-config-standard-scss": "^7.0.1"
+    "tailwindcss": "^3.3.1"
   }
 }
