@@ -3,20 +3,25 @@ import { IPasswordInput } from '@/components/common/passwordInput/passwordInput.
 import { useState } from 'react';
 import { AiOutlineEyeInvisible } from '@react-icons/all-files/ai/AiOutlineEyeInvisible';
 import { AiFillEyeInvisible } from '@react-icons/all-files/ai/AiFillEyeInvisible';
+import cn from 'classnames';
 
 export function PasswordInput({
 	value,
-	onChange
+	field,
+	onChange,
+	error
 }: IPasswordInput): JSX.Element {
 	const [show, setShow] = useState<boolean>(false);
 	return (
-		<div className={styles.inputWrapper}>
+		<div
+			className={cn(styles.inputWrapper, { [styles.error]: Boolean(error) })}
+		>
 			<label className={styles.inputLabel}>Password</label>
 			<input
 				value={value}
-				onChange={event => onChange(event.target.value)}
+				onChange={event => onChange(field, event.target.value)}
 				placeholder={'Enter your password'}
-				className={styles.input}
+				className={cn(styles.input, { [styles.error]: Boolean(error) })}
 				type={show ? 'text' : 'password'}
 			/>
 			{show ? (
@@ -30,6 +35,7 @@ export function PasswordInput({
 					onClick={() => setShow(true)}
 				/>
 			)}
+			{Boolean(error) && <span className={styles.inputError}>{error}</span>}
 		</div>
 	);
 }

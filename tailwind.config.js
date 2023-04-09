@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     mode: 'jit',
+    important: true,
     content: [
         './pages/**/*.{js,ts,jsx,tsx}',
         './src/components/**/*.{js,ts,jsx,tsx}'
@@ -21,6 +22,7 @@ module.exports = {
             'main-white': '#EAF4F4',
             'white-grenish': '#F6FFF8',
             'main-dark': '#374A5B',
+            'red': '#DF5F5F'
         },
         fontFamily: {
             sans: ['Poppins', 'sans-serif'],

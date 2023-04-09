@@ -3,7 +3,7 @@
 }
 
 .input {
-  @apply h-4 w-4 rounded border-main-dark text-main-color focus:ring-main-color;
+  @apply h-4 w-4 rounded border-main-dark accent-main-color focus:ring-main-color;
 }
 
 .label {

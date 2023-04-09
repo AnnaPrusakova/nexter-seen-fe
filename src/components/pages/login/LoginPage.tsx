@@ -1,48 +1,87 @@
-import { TextInput } from '@/components/common/textInput/TextInput';
-import { useState } from 'react';
-import { PasswordInput } from '@/components/common/passwordInput/PasswordInput';
-import { Card } from '@/components/common/card/Card';
-import { Heading } from '@/components/common/heading/Heading';
+import {
+	TextInput,
+	PasswordInput,
+	Card,
+	Heading,
+	Checkbox,
+	Button,
+	TextLink
+} from '@/components/common';
 import { SIZE } from '@/components/common/heading/heading.interfaces';
 import styles from './login.module.scss';
-import { Checkbox } from '@/components/common/checkbox/Checkbox';
-import { TextLink } from '@/components/common/textLink/TextLink';
-import { Button } from '@/components/common/button/Button';
+import { Formik, FormikProps } from 'formik';
+import { LoginRequest } from '@/interfaces/request/LoginRequest';
+import { pages } from '@/data/pages';
+import { LoginValidation } from '@/validation/login.validation';
 
 export function LoginPage(): JSX.Element {
-	const [value, setValue] = useState<string>('');
+	const initValues: LoginRequest = {
+		email: '',
+		password: '',
+		isRemember: false
+	};
 
 	const handleLogin = () => {
 		//test
 	};
 	return (
-		<div>
+		<div className={styles.wrapper}>
 			<Card className={styles.cardSize}>
-				<div className={styles.loginWrapper}>
-					<div className={styles.welcomeTitle}>Welcome!</div>
-					<Heading size={SIZE.H2} text={'Sign in'} />
-					<div className={styles.inputWrapper}>
-						<TextInput
-							value={value}
-							onChange={setValue}
-							label={'Email'}
-							placeholder={'Enter your email'}
-						/>
-						<PasswordInput value={value} onChange={setValue} />
-					</div>
-					<div className={styles.forgotWrapper}>
-						<Checkbox text={'Remember me'} />
-						<TextLink
-							link={'/forgot-password'}
-							text={'Forgot your password?'}
-						/>
-					</div>
-					<Button text={'Login'} onClick={handleLogin} />
-					<div className={styles.registerLink}>
-						Do you have any account?
-						<TextLink link={'/register'} text={'Register'} isBold={true} />
-					</div>
-				</div>
+				<Formik
+					initialValues={initValues}
+					onSubmit={handleLogin}
+					validateOnBlur={false}
+					validateOnChange={false}
+					validationSchema={LoginValidation}
+					component={({
+						values,
+						setFieldValue,
+						submitForm,
+						errors
+					}: FormikProps<LoginRequest>): JSX.Element => (
+						<div className={styles.loginWrapper}>
+							<div className={styles.welcomeTitle}>Welcome!</div>
+							<Heading size={SIZE.H2} text={'Sign in'} />
+							<div className={styles.inputWrapper}>
+								<TextInput
+									field={'email'}
+									value={values.email}
+									onChange={setFieldValue}
+									label={'Email'}
+									placeholder={'Enter your email'}
+									error={errors.email}
+								/>
+								<PasswordInput
+									field={'password'}
+									value={values.password}
+									onChange={setFieldValue}
+									error={errors.password}
+								/>
+							</div>
+							<div className={styles.forgotWrapper}>
+								<Checkbox
+									text={'Remember me'}
+									field={'isRemember'}
+									value={values.isRemember}
+									onChange={setFieldValue}
+								/>
+								<TextLink
+									link={pages[2].route}
+									text={'Forgot your password?'}
+								/>
+							</div>
+							<Button text={'Login'} onClick={submitForm} />
+							<div className={styles.registerLinkWrapper}>
+								{"Don't you have an account?"}
+								<TextLink
+									link={pages[1].route}
+									text={pages[1].name}
+									className={styles.registerLink}
+								/>
+							</div>
+						</div>
+					)}
+				/>
 			</Card>
 		</div>
 	);

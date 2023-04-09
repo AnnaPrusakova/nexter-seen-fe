@@ -1,4 +1,6 @@
 export interface IPasswordInput {
 	value: string;
-	onChange: (value: string) => void;
+	field: string;
+	onChange: (filed: string, value: string) => void;
+	error: string | undefined;
 }

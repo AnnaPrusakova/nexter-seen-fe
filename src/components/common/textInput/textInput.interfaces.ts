@@ -1,6 +1,8 @@
 export interface ITextInput {
 	value: string;
-	onChange: (value: string) => void;
+	field: string;
+	onChange: (filed: string, value: string) => void;
 	label: string;
 	placeholder: string;
+	error: string | undefined;
 }

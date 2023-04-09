@@ -2,11 +2,23 @@
   @apply h-20 flex flex-col;
 }
 
+.inputWrapper.error {
+  @apply mb-3;
+}
+
 .inputLabel {
   @apply mb-2 font-normal text-base;
 }
 
+.input.error {
+  @apply border-red;
+}
+
 .input {
-  @apply py-1 px-1.5 border border-solid rounded-md border-main-dark outline-1 outline-main-color;
+  @apply py-2 px-5 border border-solid rounded-md border-main-dark outline-1 outline-main-color;
+}
+
+.inputError {
+  @apply flex items-center font-medium tracking-wide text-red text-xs mt-1 ml-1;
 }
 
