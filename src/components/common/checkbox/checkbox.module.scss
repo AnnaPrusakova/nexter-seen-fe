@@ -1,0 +1,11 @@
+.wrapper {
+  @apply flex items-center;
+}
+
+.input {
+  @apply h-4 w-4 rounded border-main-dark text-main-color focus:ring-main-color;
+}
+
+.label {
+  @apply ml-2 text-sm font-medium text-main-dark dark:text-main-color;
+}

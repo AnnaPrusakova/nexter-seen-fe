@@ -1,0 +1,11 @@
+.wrapper {
+  @apply text-sm;
+}
+
+.link {
+  @apply font-medium text-main-dark hover:text-main-color;
+}
+
+.isBold {
+  @apply font-bold;
+}

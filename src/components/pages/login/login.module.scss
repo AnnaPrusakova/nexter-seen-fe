@@ -1,0 +1,23 @@
+.cardSize {
+  @apply max-w-3xl h-screen;
+}
+
+.loginWrapper {
+  @apply container flex flex-col py-6 px-10 h-screen justify-center;
+}
+
+.inputWrapper {
+  @apply my-4;
+}
+
+.welcomeTitle {
+  @apply font-light text-2xl mb-6;
+}
+
+.forgotWrapper {
+  @apply flex items-center justify-between mb-4;
+}
+
+.registerLink {
+  @apply flex justify-between;
+}

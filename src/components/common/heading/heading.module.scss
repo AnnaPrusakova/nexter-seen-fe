@@ -1,0 +1,8 @@
+.headingH1 {
+    @apply mb-4 text-4xl font-extrabold leading-none tracking-tight
+    text-main-dark md:text-5xl dark:text-main-white;
+}
+
+.headingH2 {
+    @apply mb-2 text-4xl font-extrabold text-main-dark dark:text-main-white;
+}

@@ -1,5 +1,5 @@
 .inputWrapper {
-  @apply w-1/4 h-20 flex flex-col;
+  @apply h-20 flex flex-col;
 }
 
 .inputLabel {
@@ -7,6 +7,6 @@
 }
 
 .input {
-  @apply w-96 py-1 px-1.5 border border-solid rounded-md border-main-dark outline-1 outline-main-color;
+  @apply py-1 px-1.5 border border-solid rounded-md border-main-dark outline-1 outline-main-color;
 }
 

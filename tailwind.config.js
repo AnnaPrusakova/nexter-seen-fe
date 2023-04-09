@@ -25,7 +25,7 @@ module.exports = {
         fontFamily: {
             sans: ['Poppins', 'sans-serif'],
             heading: ['Quicksand', 'sans-serif'],
-        },
+        }
     },
     plugins: [],
 }
