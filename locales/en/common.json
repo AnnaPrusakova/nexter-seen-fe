@@ -1,0 +1,13 @@
+{
+  "welcome": "Welcome!",
+  "signIn": "Sign in",
+  "email": "Email",
+  "password": "Password",
+  "enterYourEmail": "Enter your email",
+  "enterYourPassword": "Enter your password",
+  "rememberMe": "Remember me",
+  "forgotPassword": "Forgot your password?",
+  "login": "Login",
+  "dontHaveAccount": "Don't you have an account?",
+  "signUp": "Sign Up"
+}

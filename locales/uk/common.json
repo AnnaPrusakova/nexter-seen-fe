@@ -1,0 +1,13 @@
+{
+  "welcome": "Вітаємо!",
+  "signIn": "Вхід",
+  "email": "Пошта",
+  "password": "Пароль",
+  "enterYourEmail": "Введіть вашу електронну адресу",
+  "enterYourPassword": "Введіть ваш пароль",
+  "rememberMe": "Запам'ятати мене",
+  "forgotPassword": "Забули пароль?",
+  "login": "Ввійти",
+  "dontHaveAccount": "Немаєте аккаунту?",
+  "signUp": "Реєстрація"
+}
