@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { AiOutlineEyeInvisible } from '@react-icons/all-files/ai/AiOutlineEyeInvisible';
 import { AiFillEyeInvisible } from '@react-icons/all-files/ai/AiFillEyeInvisible';
 import cn from 'classnames';
+import useTranslation from 'next-translate/useTranslation';
 
 export function PasswordInput({
 	value,
@@ -11,16 +12,17 @@ export function PasswordInput({
 	onChange,
 	error
 }: IPasswordInput): JSX.Element {
+	const { t } = useTranslation('common');
 	const [show, setShow] = useState<boolean>(false);
 	return (
 		<div
 			className={cn(styles.inputWrapper, { [styles.error]: Boolean(error) })}
 		>
-			<label className={styles.inputLabel}>Password</label>
+			<label className={styles.inputLabel}>{t('password')}</label>
 			<input
 				value={value}
 				onChange={event => onChange(field, event.target.value)}
-				placeholder={'Enter your password'}
+				placeholder={t('enterYourPassword')}
 				className={cn(styles.input, { [styles.error]: Boolean(error) })}
 				type={show ? 'text' : 'password'}
 			/>
