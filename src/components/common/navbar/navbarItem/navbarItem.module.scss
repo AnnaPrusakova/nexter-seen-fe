@@ -1,0 +1,7 @@
+.navbarItem {
+  @apply bg-main-dark text-main-white rounded-md px-3 py-2 text-sm font-medium;
+}
+
+.navbarItemMobile {
+  @apply  bg-main-dark text-main-white block rounded-md px-3 py-2 text-base font-medium;
+}
