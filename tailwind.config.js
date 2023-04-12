@@ -17,11 +17,10 @@ module.exports = {
         },
         colors: {
             'main-color': '#6B9080',
-            'main-light': '#A4C3B2',
-            'main-lighter': '#CCE3DE',
-            'main-white': '#EAF4F4',
-            'white-grenish': '#F6FFF8',
-            'main-dark': '#374A5B',
+            'main-dark': '#252422',
+            'main-white': '#FFFCF2',
+            'main-brown': '#403D39',
+            'main-brown-light': '#CCC5B9',
             'red': '#DF5F5F'
         },
         fontFamily: {
