@@ -1,7 +1,11 @@
-.navbarItem {
-  @apply  text-main-white rounded-md px-3 py-2 text-base font-medium;
+.navbarItemLink, .navbarItemBtn {
+  @apply text-main-white rounded-md px-3 py-2 text-base font-medium;
 }
 
 .navbarItemMobile {
   @apply  bg-main-dark text-main-white block rounded-md px-3 py-2 text-base font-medium;
+}
+
+.navbarItemBtn {
+  @apply cursor-pointer;
 }

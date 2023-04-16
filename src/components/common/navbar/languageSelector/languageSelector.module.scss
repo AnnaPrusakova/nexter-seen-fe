@@ -1,5 +1,5 @@
 .select {
-  @apply text-main-white text-sm block w-full p-2.5
+  @apply text-main-white text-base block w-full p-2.5 cursor-pointer
   dark:placeholder-main-dark dark:text-main-white dark:focus:ring-main-dark dark:focus:border-main-dark;
   background: transparent;
 }

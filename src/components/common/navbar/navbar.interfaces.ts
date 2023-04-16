@@ -1,4 +1,5 @@
 export interface INavbarItem {
-	link: string;
+	link: string | null;
 	name: string;
+	setIsOpen?: (value: boolean) => void;
 }

@@ -7,7 +7,7 @@ export function HomePage(): JSX.Element {
 			<div className={styles.firstSection}>
 				<div className={styles.firstPoster}>
 					<Image
-						width={1500}
+						width={1600}
 						height={100}
 						src={'/poster_big1.png'}
 						alt={'poster'}
@@ -25,7 +25,13 @@ export function HomePage(): JSX.Element {
 					</span>
 				</div>
 			</div>
-			<div className={styles.secondSection}>aaaa</div>
+			<div className={styles.secondSection}>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
+				semper enim, quis vehicula quam. Vestibulum nulla nisl, molestie non
+				arcu ut, interdum efficitur nisi. Fusce nec varius nunc, nec accumsan
+				dui. Fusce et arcu felis. Aenean ut dui tincidunt velit varius
+				ullamcorper quis vitae neque. Ut suscipit augue erat.
+			</div>
 			<div className={styles.thirdSection}>
 				<div className={styles.secondPoster}>
 					<Image
