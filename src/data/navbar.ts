@@ -1,3 +1,6 @@
 import { pages } from '@/data/pages';
 
-export const navbarItemsForNoLoginUser = [pages[0], pages[1]];
+export const navbarItemsForNoLoginUser = [
+	{ name: 'login', route: pages[0].route },
+	{ name: 'signUp', route: pages[1].route }
+];

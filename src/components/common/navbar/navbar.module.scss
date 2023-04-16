@@ -1,5 +1,5 @@
 .navbarWrapper {
-  @apply bg-main-dark;
+  background-color: transparent;
 }
 
 .wrapper {
@@ -27,12 +27,8 @@
   @apply flex flex-shrink-0 items-center;
 }
 
-.logoImgHid {
-  @apply hidden h-8 w-auto lg:block;
-}
-
 .logoImg {
-  @apply block h-12 w-auto lg:hidden cursor-pointer;
+  @apply block h-12 w-auto  cursor-pointer;
 }
 
 .navbarItemsWrapper {

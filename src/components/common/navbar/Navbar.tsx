@@ -17,19 +17,14 @@ export function Navbar(): JSX.Element {
 					</div>
 					<div className={styles.logoWrapper}>
 						<div className={styles.logo}>
-							<Image
-								className={styles.logoImgHid}
-								src={MiniLogo}
-								alt={'logo'}
-							/>
 							<Image className={styles.logoImg} src={MiniLogo} alt={'logo'} />
 						</div>
-						<div className={styles.navbarItemsWrapper}>
-							<div className={styles.navbarItems}>
-								{navbarItemsForNoLoginUser.map((elem, key) => (
-									<NavbarItem key={key} link={elem.route} name={elem.name} />
-								))}
-							</div>
+					</div>
+					<div className={styles.navbarItemsWrapper}>
+						<div className={styles.navbarItems}>
+							{navbarItemsForNoLoginUser.map((elem, key) => (
+								<NavbarItem key={key} link={elem.route} name={elem.name} />
+							))}
 						</div>
 					</div>
 					<LanguageSelector />

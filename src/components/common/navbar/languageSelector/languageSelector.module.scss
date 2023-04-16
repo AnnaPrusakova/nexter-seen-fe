@@ -1,4 +1,5 @@
 .select {
-  @apply bg-main-dark text-main-white text-sm block w-full p-2.5
-  dark:bg-main-color dark:border-main-dark dark:placeholder-main-dark dark:text-main-white dark:focus:ring-main-dark dark:focus:border-main-dark;
+  @apply text-main-white text-sm block w-full p-2.5
+  dark:placeholder-main-dark dark:text-main-white dark:focus:ring-main-dark dark:focus:border-main-dark;
+  background: transparent;
 }
