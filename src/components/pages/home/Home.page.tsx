@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './home.module.scss';
+import { Footer } from '@/components/common/footer/Footer';
 
 export function HomePage(): JSX.Element {
 	return (
@@ -43,6 +44,7 @@ export function HomePage(): JSX.Element {
 					<div className={styles.secondPosterShadow} />
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 }
