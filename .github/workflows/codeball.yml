@@ -1,19 +1,17 @@
 name: Codeball
-on:
-  pull_request: {}
-  pull_request_review_comment:
-    types: [created, edited]
+
+on: [pull_request]
 
 jobs:
-  codeball_job:
-    runs-on: ubuntu-latest
-    name: Codeball
+  codeball-review:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 30
+    name: Run Codeball Code Review
     steps:
-      - name: Codeball
+      - name: Codeball AI Actions
         uses: sturdy-dev/codeball-action@v2
         with:
-          # For all configuration options see https://github.com/sturdy-dev/codeball-action/blob/v2/action.yml
-          approvePullRequests: "true"
+          approvePullRequests: "false"
           labelPullRequestsWhenApproved: "true"
-          labelPullRequestsWhenReviewNeeded: "false"
+          labelPullRequestsWhenReviewNeeded: "true"
           failJobsWhenReviewNeeded: "false"
