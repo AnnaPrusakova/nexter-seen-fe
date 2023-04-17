@@ -14,15 +14,20 @@ export function PasswordInput({
 }: IPasswordInput): JSX.Element {
 	const { t } = useTranslation('common');
 	const [show, setShow] = useState<boolean>(false);
+	const isConfirm = field === 'confirmPassword';
 	return (
 		<div
 			className={cn(styles.inputWrapper, { [styles.error]: Boolean(error) })}
 		>
-			<label className={styles.inputLabel}>{t('password')}</label>
+			<label className={styles.inputLabel}>
+				{t(isConfirm ? 'confirmPassword' : 'password')}
+			</label>
 			<input
 				value={value}
 				onChange={event => onChange(field, event.target.value)}
-				placeholder={t('enterYourPassword')}
+				placeholder={t(
+					isConfirm ? 'enterYourConfirmPassword' : 'enterYourPassword'
+				)}
 				className={cn(styles.input, { [styles.error]: Boolean(error) })}
 				type={show ? 'text' : 'password'}
 			/>

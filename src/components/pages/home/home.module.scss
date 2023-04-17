@@ -1,3 +1,7 @@
+.home {
+  @apply h-full w-full;
+}
+
 .firstSection {
   top: 0;
   width: 100%;
@@ -16,7 +20,6 @@
 
 .firstPosterShadow {
   z-index: -1;
-  width: 102vw;
   background:  linear-gradient(159deg, rgba(0,0,0,0.6153054971988796) 23%, rgba(73,71,74,0.6153054971988796) 45%, rgba(11,11,11,1) 86%);
 }
 
@@ -53,7 +56,6 @@
   position: absolute;
   top: 0;
   z-index: 1;
-  width: 102vw;
   height: 42vw;
   background:  linear-gradient(159deg, rgba(0,0,0,0.6153054971988796) 23%, rgba(73,71,74,0.6153054971988796) 45%, rgba(11,11,11,1) 86%);
 }

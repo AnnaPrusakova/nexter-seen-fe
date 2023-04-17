@@ -1,5 +1,7 @@
 .navbarItemLink, .navbarItemBtn {
-  @apply text-main-white rounded-md px-3 py-2 text-base font-medium;
+  @apply text-main-white rounded-md py-2 px-4 text-base font-medium border border-main-color rounded
+  hover:bg-main-color hover:text-main-white;
+  background: transparent;
 }
 
 .navbarItemMobile {
