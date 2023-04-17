@@ -3,11 +3,15 @@
   "signIn": "Sign in",
   "email": "Email",
   "password": "Password",
+  "username": "Username",
+  "confirmPassword": "Confirm Password",
   "enterYourEmail": "Enter your email",
   "enterYourPassword": "Enter your password",
+  "enterYourConfirmPassword": "Confirm your password",
+  "enterYourUsername": "Enter your username",
   "rememberMe": "Remember me",
   "forgotPassword": "Forgot your password?",
   "login": "Login",
-  "dontHaveAccount": "Don't you have an account?",
+  "register": "Register",
   "signUp": "Sign Up"
 }

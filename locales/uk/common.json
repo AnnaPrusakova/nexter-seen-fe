@@ -3,11 +3,15 @@
   "signIn": "Вхід",
   "email": "Пошта",
   "password": "Пароль",
+  "username": "Ім'я Користувача",
+  "confirmPassword": "Підтвердження паролю",
   "enterYourEmail": "Введіть вашу електронну адресу",
   "enterYourPassword": "Введіть ваш пароль",
+  "enterYourConfirmPassword": "Підтвердіть ваш пароль",
+  "enterYourUsername": "Введіть ваше ім'я користувача",
   "rememberMe": "Запам'ятати мене",
   "forgotPassword": "Забули пароль?",
   "login": "Ввійти",
-  "dontHaveAccount": "Немаєте аккаунту?",
+  "register": "Зареєструватися",
   "signUp": "Реєстрація"
 }

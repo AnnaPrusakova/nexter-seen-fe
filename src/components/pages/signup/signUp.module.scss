@@ -1,0 +1,12 @@
+.signUpWrapper {
+  @apply flex flex-col px-10 h-screen justify-center;
+  height: 95vh;
+}
+
+.welcomeTitle {
+  @apply font-light text-2xl mb-6;
+}
+
+.inputWrapper {
+  @apply my-4;
+}

@@ -6,11 +6,13 @@ import { MobileMenuIcon } from '@/components/common/navbar/navbarMobile/MobileMe
 import { MobileMenu } from '@/components/common/navbar/navbarMobile/MobileMenu';
 import { LanguageSelector } from '@/components/common/navbar/languageSelector/LanguageSelector';
 import { navbarItemsForNoLoginUser } from '@/data/navbar';
-import { LoginPopUp } from '@/components/pages/login/LoginPopUp';
+import { LoginModal } from '@/components/pages/login/Login.modal';
 import { useState } from 'react';
+import { SignUpModal } from '@/components/pages/signup/SignUp.modal';
 
 export function Navbar(): JSX.Element {
 	const [isLoginOpen, setIsLoginOpen] = useState<boolean>(false);
+	const [isSignUpOpen, setIsSignUpOpen] = useState<boolean>(false);
 
 	return (
 		<>
@@ -32,7 +34,9 @@ export function Navbar(): JSX.Element {
 										key={key}
 										link={elem.route}
 										name={elem.name}
-										setIsOpen={setIsLoginOpen}
+										setIsOpen={
+											elem.name === 'login' ? setIsLoginOpen : setIsSignUpOpen
+										}
 									/>
 								))}
 							</div>
@@ -42,10 +46,15 @@ export function Navbar(): JSX.Element {
 					<MobileMenu />
 				</div>
 			</nav>
-			{isLoginOpen && (
-				<LoginPopUp
+			{isLoginOpen ? (
+				<LoginModal
 					isOpen={isLoginOpen}
 					onClose={() => setIsLoginOpen(false)}
+				/>
+			) : (
+				<SignUpModal
+					isOpen={isSignUpOpen}
+					onClose={() => setIsSignUpOpen(false)}
 				/>
 			)}
 		</>
