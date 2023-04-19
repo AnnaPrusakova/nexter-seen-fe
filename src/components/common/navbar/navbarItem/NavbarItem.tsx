@@ -1,5 +1,5 @@
 import { INavbarItem } from '@/components/common/navbar/navbar.interfaces';
-import { NavbarButton } from '@/components/common/navbarButton/NavbarButton';
+import { NavbarButton } from '@/components/common/navbar/navbarButton/NavbarButton';
 
 export function NavbarItem({
 	link,

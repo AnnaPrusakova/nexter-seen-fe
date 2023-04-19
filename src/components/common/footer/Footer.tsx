@@ -4,6 +4,7 @@ import { AiOutlineInstagram } from '@react-icons/all-files/ai/AiOutlineInstagram
 import { TextLink } from '@/components/common';
 import { AiOutlineCopyrightCircle } from '@react-icons/all-files/ai/AiOutlineCopyrightCircle';
 import useTranslation from 'next-translate/useTranslation';
+import { pages } from '@/data/pages';
 
 export function Footer(): JSX.Element {
 	const { t } = useTranslation('common');
@@ -17,17 +18,17 @@ export function Footer(): JSX.Element {
 				</div>
 				<div className={styles.infoPages}>
 					<TextLink
-						link={'/about'}
+						link={pages[1].route}
 						text={'common:about'}
 						className={styles.linkText}
 					/>
 					<TextLink
-						link={'/policy'}
+						link={pages[2].route}
 						text={'common:policy'}
 						className={styles.linkText}
 					/>
 					<TextLink
-						link={'/contact'}
+						link={pages[3].route}
 						text={'common:contact'}
 						className={styles.linkText}
 					/>

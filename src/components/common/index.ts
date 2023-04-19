@@ -6,3 +6,5 @@ export * from './heading/Heading';
 export * from './passwordInput/PasswordInput';
 export * from './textInput/TextInput';
 export * from './textLink/TextLink';
+export * from './modal/Modal';
+export * from './navbar/Navbar';
