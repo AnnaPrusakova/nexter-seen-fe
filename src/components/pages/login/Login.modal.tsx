@@ -2,7 +2,6 @@ import {
 	TextInput,
 	PasswordInput,
 	Heading,
-	Checkbox,
 	Button,
 	TextLink
 } from '@/components/common';
@@ -61,12 +60,6 @@ export function LoginModal({ isOpen, onClose }: ILoginPopUp): JSX.Element {
 							/>
 						</div>
 						<div className={styles.forgotWrapper}>
-							<Checkbox
-								text={t('rememberMe')}
-								field={'isRemember'}
-								value={values.isRemember}
-								onChange={setFieldValue}
-							/>
 							<TextLink link={pages[2].route} text={t('forgotPassword')} />
 						</div>
 						<Button text={t('login')} onClick={submitForm} />

@@ -7,12 +7,7 @@ export function HomePage(): JSX.Element {
 		<div>
 			<div className={styles.firstSection}>
 				<div className={styles.firstPoster}>
-					<Image
-						width={1600}
-						height={100}
-						src={'/poster_big1.png'}
-						alt={'poster'}
-					/>
+					<Image fill src={'/poster_big1.png'} alt={'poster'} />
 				</div>
 				<div className={styles.firstPosterShadow} />
 				<div className={styles.textWrapper}>

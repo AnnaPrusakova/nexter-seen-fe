@@ -13,13 +13,17 @@ import { SignUpModal } from '@/components/pages/signup/SignUp.modal';
 export function Navbar(): JSX.Element {
 	const [isLoginOpen, setIsLoginOpen] = useState<boolean>(false);
 	const [isSignUpOpen, setIsSignUpOpen] = useState<boolean>(false);
+	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
 	return (
 		<>
 			<nav className={styles.navbarWrapper}>
 				<div className={styles.wrapper}>
 					<div className={styles.menuIconWrapper}>
-						<div className={styles.menuMobileButton}>
+						<div
+							className={styles.menuMobileButton}
+							onClick={() => setIsMenuOpen(!isMenuOpen)}
+						>
 							<MobileMenuIcon />
 						</div>
 						<div className={styles.logoWrapper}>
@@ -41,9 +45,15 @@ export function Navbar(): JSX.Element {
 								))}
 							</div>
 						</div>
-						<LanguageSelector />
+						<div className={styles.language}>
+							<LanguageSelector />
+						</div>
 					</div>
-					<MobileMenu />
+					<MobileMenu
+						isMenuOpen={isMenuOpen}
+						setIsSignUpOpen={setIsSignUpOpen}
+						setIsLoginOpen={setIsLoginOpen}
+					/>
 				</div>
 			</nav>
 			{isLoginOpen ? (
