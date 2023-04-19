@@ -11,7 +11,7 @@
 }
 
 .menuMobileButton {
-  @apply absolute inset-y-0 left-0 flex items-center sm:hidden;
+  @apply absolute inset-y-0 left-0 flex items-center md:hidden;
 }
 
 .mobileButton {
@@ -20,7 +20,7 @@
 }
 
 .logoWrapper {
-  @apply flex flex-1 items-center justify-center sm:items-stretch sm:justify-start;
+  @apply flex flex-1 items-center justify-center md:items-stretch md:justify-start;
 }
 
 .logo {
@@ -28,13 +28,17 @@
 }
 
 .logoImg {
-  @apply block h-12 w-auto  cursor-pointer;
+  @apply block h-12 w-auto cursor-pointer;
 }
 
 .navbarItemsWrapper {
-  @apply hidden sm:ml-6 sm:block;
+  @apply hidden sm:ml-6 md:block;
 }
 
 .navbarItems {
   @apply flex space-x-4 mr-8;
+}
+
+.language {
+  @apply absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0;
 }
