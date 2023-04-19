@@ -39,7 +39,7 @@ export function Navbar(): JSX.Element {
 										link={elem.route}
 										name={elem.name}
 										setIsOpen={
-											elem.name === 'login' ? setIsLoginOpen : setIsSignUpOpen
+											elem.name === 'signIn' ? setIsLoginOpen : setIsSignUpOpen
 										}
 									/>
 								))}

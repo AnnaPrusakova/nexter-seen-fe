@@ -1,4 +1,4 @@
 export const navbarItemsForNoLoginUser = [
-	{ name: 'login', route: null },
+	{ name: 'signIn', route: null },
 	{ name: 'signUp', route: null }
 ];
