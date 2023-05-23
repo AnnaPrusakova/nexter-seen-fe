@@ -25,6 +25,8 @@ export function LoginModal({ isOpen, onClose }: ILoginPopUp): JSX.Element {
 
 	const handleLogin = () => {
 		//test
+		localStorage.setItem('isLogin', 'true');
+		onClose();
 	};
 	return (
 		<Modal isOpen={isOpen} onClose={onClose}>

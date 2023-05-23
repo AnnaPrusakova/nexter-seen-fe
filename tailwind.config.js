@@ -16,16 +16,15 @@ module.exports = {
             xl: '1440px',
         },
         colors: {
-            'main-color': '#EB5E28',
-            'main-dark': '#252422',
-            'main-white': '#FFFCF2',
-            'main-brown': '#403D39',
+            'main-color': '#ef233c',
+            'main-dark': '#001A23',
+            'main-white': '#edf2f4',
+            'main-brown': '#2A2C25',
             'main-brown-light': '#CCC5B9',
             'red': '#DF5F5F'
         },
         fontFamily: {
-            sans: ['Poppins', 'sans-serif'],
-            heading: ['Quicksand', 'sans-serif'],
+            sans: ['Roboto', 'sans-serif'],
         }
     },
     plugins: [],

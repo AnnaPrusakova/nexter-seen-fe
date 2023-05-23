@@ -3,11 +3,11 @@
 }
 
 .firstSection {
-  @apply top-0 w-full h-[39vw] md:h-[29vw] sm:h-[38vw];
+  @apply top-0 w-full h-[39vw] md:h-[29vw] sm:h-[33vw];
 }
 
 .firstPoster, .firstPosterShadow {
-  @apply absolute w-full h-[50vw] left-2/4 top-0 -translate-x-2/4 sm:h-[60vw];
+  @apply absolute w-full h-[65vw] left-2/4 top-0 -translate-x-2/4 sm:h-[60vw] md:h-[65vw];
   z-index: -2;
 }
 
@@ -30,11 +30,11 @@
 }
 
 .secondSection {
-  @apply relative w-full h-[39vw] md:h-[29vw] sm:h-[60vw] bg-main-color;
+  @apply relative w-full h-[60vw] md:h-[40vw] sm:h-[60vw] bg-main-color;
 }
 
 .thirdSection {
-  @apply relative w-full h-[43vw] lg:h-[43vw] md:h-[39vw] sm:h-[42vw] bg-main-color;
+  @apply relative w-full h-[43vw] lg:h-[43vw] md:h-[39vw] sm:h-[42vw];
 }
 
 .secondPoster, .secondPosterShadow {
@@ -45,4 +45,9 @@
   @apply absolute top-0 h-[42vw];
   z-index: 1;
   background:  linear-gradient(159deg, rgba(0,0,0,0.6153054971988796) 23%, rgba(73,71,74,0.6153054971988796) 45%, rgba(11,11,11,1) 86%);
+}
+
+.mockupWrapper {
+    @apply absolute top-0 w-full h-[42vw] flex justify-center items-center;
+    z-index: 2;
 }
