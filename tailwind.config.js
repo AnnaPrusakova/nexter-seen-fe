@@ -24,8 +24,7 @@ module.exports = {
             'red': '#DF5F5F'
         },
         fontFamily: {
-            sans: ['Poppins', 'sans-serif'],
-            heading: ['Quicksand', 'sans-serif'],
+            sans: ['Roboto', 'sans-serif'],
         }
     },
     plugins: [],
